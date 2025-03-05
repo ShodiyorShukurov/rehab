@@ -17,7 +17,7 @@ const App = () => {
       <main>
         <HeroSection />
         <VideoModal />
-        {/* <FeaturesSection /> */}
+        <FeaturesSection />
         {/* <Features /> */}
         {/* <ServicesSection /> */}
         {/* <DoctorsSection /> */}

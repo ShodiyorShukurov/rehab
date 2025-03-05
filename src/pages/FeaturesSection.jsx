@@ -30,20 +30,28 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="py-[120px]">
+    <section className="pt-[60px] md:pt-[120px]">
       <div className="container">
-        <div className="grid grid-cols-2 gap-5">
-          <h2 className="text-[36px] font-semibold text-[#121418]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-5">
+          <h4 className="flex lg:hidden items-center  text-[#007bbd] text-[14px]  border-b-4 border-[#007bbd] pb-[10px] w-[200px] gap-3">
+            <span className="w-[8px] h-[8px] flex items-center text-[30px]">
+              •
+            </span>
+            Features
+          </h4>
+          <h2 className="text-[28px] md:text-[32px] lg:text-[36px] leading-[39px] md:leading-[45px] lg:leading-[50px] font-semibold text-[#121418]">
             Why Choose Us for Your Healthcare Needs?
           </h2>
 
           <div className="flex flex-col">
-            <h4 className="text-[#007bbd] text-[14px]  border-b-4 border-[#007bbd] pb-[10px] w-[200px] flex items-center gap-3">
-              {' '}
-              <span className="w-[8px] h-[8px] flex items-center text-[30px]">•</span> Features
+            <h4 className="hidden lg:flex items-center  text-[#007bbd] text-[14px]  border-b-4 border-[#007bbd] pb-[10px] w-[200px] gap-3">
+              <span className="w-[8px] h-[8px] flex items-center text-[30px]">
+                •
+              </span> 
+              Features
             </h4>
 
-            <p className="mt-[24px] text-[#696969]">
+            <p className="lg:mt-[24px] text-[#696969]">
               Choosing the right clinic is essential for your well-being. At our
               medical clinic, we are dedicated to providing exceptional,
               personalized care. With our experienced staff and advanced
@@ -65,7 +73,7 @@ const FeaturesSection = () => {
               <div className="bg-[#007bbd] w-[52px] h-[52px] flex items-center justify-center rounded-[16px] mb-4">
                 {feature.icon}
               </div>
-              <h3 className="font-semibold text-[20px] leading-[28px]">
+              <h3 className="font-semibold text-[18px] md:text-[20px] leading-[25px] md:leading-[28px]">
                 {feature.title}
               </h3>
               <p className="text-[#696969] text-[16px] mt-2 leading-[26px]">

@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <header className="fixed md:top-3 z-30 w-full">
       <div className="container">
-        <nav className="flex items-center justify-between py-[20px] md:p-[12px] bg-white rounded-[50px] md:border border-[#cfcfcf]">
+        <nav className="flex items-center justify-between py-[20px] md:p-[12px] bg-white md:rounded-[50px] md:border border-[#cfcfcf]">
           <div className="flex items-center space-x-2">
             <svg
               width="32"
