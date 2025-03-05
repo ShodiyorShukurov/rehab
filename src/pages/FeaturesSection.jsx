@@ -32,26 +32,26 @@ const FeaturesSection = () => {
   return (
     <section className="pt-[60px] md:pt-[120px]">
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-5">
-          <h4 className="flex lg:hidden items-center  text-[#007bbd] text-[14px]  border-b-4 border-[#007bbd] pb-[10px] w-[200px] gap-3">
+        <div className="grid grid-cols-1 2xl:grid-cols-2 gap-4 2xl:gap-5">
+          <h4 className="flex 2xl:hidden items-center  text-[#007bbd] text-[14px]  border-b-4 border-[#007bbd] pb-[10px] w-[200px] gap-3">
             <span className="w-[8px] h-[8px] flex items-center text-[30px]">
               •
             </span>
             Features
           </h4>
-          <h2 className="text-[28px] md:text-[32px] lg:text-[36px] leading-[39px] md:leading-[45px] lg:leading-[50px] font-semibold text-[#121418]">
+          <h2 className="text-[28px] md:text-[32px] 2xl:text-[36px] leading-[39px] md:leading-[45px] 2xl:leading-[50px] font-semibold text-[#121418]">
             Why Choose Us for Your Healthcare Needs?
           </h2>
 
           <div className="flex flex-col">
-            <h4 className="hidden lg:flex items-center  text-[#007bbd] text-[14px]  border-b-4 border-[#007bbd] pb-[10px] w-[200px] gap-3">
+            <h4 className="hidden 2xl:flex items-center  text-[#007bbd] text-[14px]  border-b-4 border-[#007bbd] pb-[10px] w-[200px] gap-3">
               <span className="w-[8px] h-[8px] flex items-center text-[30px]">
                 •
               </span> 
               Features
             </h4>
 
-            <p className="lg:mt-[24px] text-[#696969]">
+            <p className="2xl:mt-[24px] text-[#696969]">
               Choosing the right clinic is essential for your well-being. At our
               medical clinic, we are dedicated to providing exceptional,
               personalized care. With our experienced staff and advanced
@@ -64,7 +64,7 @@ const FeaturesSection = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-[24px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-6 mt-[24px]">
           {features.map((feature, index) => (
             <div
               key={index}

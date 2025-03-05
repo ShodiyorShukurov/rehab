@@ -18,8 +18,8 @@ const App = () => {
         <HeroSection />
         <VideoModal />
         <FeaturesSection />
-        {/* <Features /> */}
-        {/* <ServicesSection /> */}
+        <Features />
+        <ServicesSection />
         {/* <DoctorsSection /> */}
         {/* <Testimonials /> */}
         {/* <BookingBanner /> */}

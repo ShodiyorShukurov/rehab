@@ -32,9 +32,9 @@ const ServicesSection = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="py-12 ">
+    <section className="pt-[120px]">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 2xl:grid-cols-3 gap-6">
           <div className="flex flex-col gap-4">
             <div className="bg-[#007BBD] text-white p-6 rounded-[16px] h-[360px]">
               <h4 className="text-[#fff] text-[14px]  border-b-4 border-[#fff] pb-[10px] w-[200px] flex items-center gap-3">
@@ -43,7 +43,7 @@ const ServicesSection = () => {
                 </span>
                 Services
               </h4>
-              <h2 className="text-[24px] font-semibold leading-[34px] my-6">
+              <h2 className="text-[20px] md:text-[24px] font-semibold leading-[28px] md:leading-[34px] my-6">
                 Healthcare Across Multiple Specialties
               </h2>
               <p className="text-[#fffc] text-[18px] leading-[29px] max-w-[352px]">
@@ -74,7 +74,7 @@ const ServicesSection = () => {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-between border-y p-6 cursor-pointer hover:bg-[#f7f7f7]"
+                  className="flex md:items-center md:justify-between flex-col md:flex-row border-y p-6 cursor-pointer hover:bg-[#f7f7f7]"
                 >
                   
                   <img
@@ -83,7 +83,7 @@ const ServicesSection = () => {
                     className="w-[160px] h-[110px] rounded-[16px] object-cover"
                   />
                   <div>
-                    <h3 className="text-[24px] leading-[34px] text-[#121418] font-semibold">{service.title}</h3>
+                    <h3 className="text-[20px] md:text-[24px] leading-[28px] md:leading-[34px] text-[#121418] font-semibold mt-[12px] md:mt-0">{service.title}</h3>
                     <p className="text-[16px] leading-[26px] text-[#696969] max-w-[380px] mt-[8px]">
                       {service.description}
                     </p>
@@ -98,10 +98,10 @@ const ServicesSection = () => {
 
           {isOpen && (
             <div
-              className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+              className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
               onClick={() => setIsOpen(false)}
             >
-              <div className="bg-white p-4 rounded-lg shadow-lg max-w-2xl w-full relative">
+              <div className="rounded-[16px] max-w-2xl w-full relative p-[20px]">
                 <button
                   className="absolute top-4 right-4 text-gray-600 hover:text-gray-800"
                   onClick={() => setIsOpen(false)}
