@@ -34,7 +34,7 @@ const ServicesSection = () => {
   return (
     <section className="pt-[120px]">
       <div className="container">
-        <div className="grid grid-cols-1 2xl:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 2xl:grid-cols-3 md:gap-6">
           <div className="flex flex-col gap-4">
             <div className="bg-[#007BBD] text-white p-6 rounded-[16px] h-[360px]">
               <h4 className="text-[#fff] text-[14px]  border-b-4 border-[#fff] pb-[10px] w-[200px] flex items-center gap-3">
@@ -69,7 +69,7 @@ const ServicesSection = () => {
             </div>
           </div>
 
-          <div className="space-y-6 col-span-2">
+          <div className="space-y-6 col-span-2 mt-[24px] md:mt-0">
             <div>
               {services.map((service, index) => (
                 <div
