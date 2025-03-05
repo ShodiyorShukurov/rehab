@@ -1,24 +1,25 @@
 import { Linkedin } from 'lucide-react';
+import data from '../mock/data.json'
 
 const doctors = [
   {
-    name: 'Dr. Emily Claire',
-    specialty: 'Pediatrician',
+    name: data.doctors.card1_title,
+    specialty: data.doctors.card1_text,
     image: 'https://placehold.co/300',
   },
   {
-    name: 'Dr. John Doe',
-    specialty: 'Pediatrician',
+    name: data.doctors.card2_title,
+    specialty: data.doctors.card2_text,
     image: 'https://placehold.co/300',
   },
   {
-    name: 'Dr. Ema Watson',
-    specialty: 'Dermatologist',
+    name: data.doctors.card3_title,
+    specialty: data.doctors.card3_text,
     image: 'https://placehold.co/300',
   },
   {
-    name: 'Dr. Rose J',
-    specialty: 'General Practitioner',
+    name: data.doctors.card4_title,
+    specialty: data.doctors.card4_text,
     image: 'https://placehold.co/300',
   },
 ];
@@ -31,17 +32,17 @@ const DoctorsSection =()=> {
           <span className="w-[8px] h-[8px] flex items-center text-[30px]">
             •
           </span>
-          Teams
+          {data.doctors.teams}
         </h4>
         <div className="flex flex-col md:flex-row md:justify-between md:items-center my-8">
           <div>
-            <h2 className="text-[32px] 2xl:text-[36px] leading-[45px] 2xl:leading-[50px] font-semibold text-[#121418]">Meet Our Doctor</h2>
+            <h2 className="text-[32px] 2xl:text-[36px] leading-[45px] 2xl:leading-[50px] font-semibold text-[#121418]">{data.doctors.title}</h2>
             <p className="text-[#696969] text-[16px] leading-[26px] mt-[10px]">
-              Our doctor is highly skilled and an expert in their field.
+              {data.doctors.text}
             </p>
           </div>
           <button className="bg-[#007bbd] text-white px-[24px] py-[12px] rounded-full text-[16px] leading-[26px] w-fit mt-[24px] md:mt-0">
-            View More
+           {data.doctors.button_text}
           </button>
         </div>
 

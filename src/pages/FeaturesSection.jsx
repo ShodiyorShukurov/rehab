@@ -1,30 +1,27 @@
 import React from 'react';
 import { User, Search, Shield, MapPin } from 'lucide-react';
+import data from '../mock/data.json';
 
 const features = [
   {
     icon: <User className="w-6 h-6 text-white" />,
-    title: 'Expert Medical Team',
-    description:
-      'Our skilled doctors and specialists bring years of experience health care.',
+    title: data.features.card1_title,
+    description: data.features.card1_text,
   },
   {
     icon: <Search className="w-6 h-6 text-white" />,
-    title: 'Patient-Centered',
-    description:
-      'Your health and comfort come first, with personalized care plans for each patient.',
+    title: data.features.card2_title,
+    description: data.features.card2_text,
   },
   {
     icon: <Shield className="w-6 h-6 text-white" />,
-    title: 'Advanced Diagnostic',
-    description:
-      'We use the latest medical equipment to ensure accurate diagnoses.',
+    title: data.features.card3_title,
+    description: data.features.card3_text,
   },
   {
     icon: <MapPin className="w-6 h-6 text-white" />,
-    title: 'Convenient Location',
-    description:
-      'Easily accessible clinic with flexible hours and booking to fit your busy schedule.',
+    title: data.features.card4_title,
+    description: data.features.card4_text,
   },
 ];
 
@@ -37,29 +34,26 @@ const FeaturesSection = () => {
             <span className="w-[8px] h-[8px] flex items-center text-[30px]">
               •
             </span>
-            Features
+            {data.features.features}
           </h4>
           <h2 className="text-[28px] md:text-[32px] 2xl:text-[36px] leading-[39px] md:leading-[45px] 2xl:leading-[50px] font-semibold text-[#121418]">
-            Why Choose Us for Your Healthcare Needs?
+            {data.features.title1}
           </h2>
 
           <div className="flex flex-col">
             <h4 className="hidden 2xl:flex items-center  text-[#007bbd] text-[14px]  border-b-4 border-[#007bbd] pb-[10px] w-[200px] gap-3">
               <span className="w-[8px] h-[8px] flex items-center text-[30px]">
                 •
-              </span> 
-              Features
+              </span>
+              {data.features.features}
             </h4>
 
             <p className="2xl:mt-[24px] text-[#696969]">
-              Choosing the right clinic is essential for your well-being. At our
-              medical clinic, we are dedicated to providing exceptional,
-              personalized care. With our experienced staff and advanced
-              technology, we prioritize your health and comfort.
+              {data.features.text1}
             </p>
 
             <button className="mt-6 bg-[#007bbd] text-white px-6 py-3 rounded-full  hover:bg-blue-600 transition w-fit">
-              Learn More
+              {data.features.button_text}
             </button>
           </div>
         </div>

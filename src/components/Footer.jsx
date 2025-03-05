@@ -1,3 +1,5 @@
+import data from '../mock/data.json';
+
 const Footer = () => {
   return (
     <footer className="bg-[#121418] text-white py-[48px]">
@@ -35,14 +37,14 @@ const Footer = () => {
               </h4>
             </div>
             <p className="text-[16px] leading-[26px] mt-[16px] md:max-w-[360px] mb-[40px] md:mb-0">
-              Your Health, Our Priority.Compassionate Care, Expert Solutions.
+              {data.footer.title}
             </p>
           </div>
 
           <div className="flex flex-col md:flex-row gap-6 md:pr-6">
             <div className="flex flex-col gap-1">
               <h4 className="font-semibold text-[16px] leading-[22px]">
-                EMAIL ADDRESS
+                {data.footer.email_address}
               </h4>
               <a
                 href="malito:enima@mail.com"
@@ -53,7 +55,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-1">
               <h4 className="font-semibold text-[16px] leading-[22px]">
-                PHONE NUMBER
+                {data.footer.phone_number}
               </h4>
               <a href="tel:(+1) 2912324" className="text-[14px] leading-[22px]">
                 (+1) 2912324
@@ -65,13 +67,13 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between py-[24px] border-b-[1px] border-[#505254]">
           <div className="flex  flex-col gap-1">
             <h4 className="font-semibold text-[16px] leading-[22px]">
-              CLINIC HOURS
+              {data.footer.hours}
             </h4>
             <p className="text-[14px] leading-[22px] text-[#fffc]">
-              Weekdays: 09:00 - 18:00
+              {data.footer.weekdays}: 09:00 - 18:00
             </p>
             <p className="text-[14px] leading-[22px] text-[#fffc]">
-              Weekend: 09:00 - 15:00
+              {data.footer.weekend}: 09:00 - 15:00
             </p>
           </div>
 
@@ -80,41 +82,41 @@ const Footer = () => {
           <ul className="flex  flex-col md:flex-row  justify-between gap-10 mt-[50px] md:mt-0 md:pr-6">
             <li className="flex flex-col gap-3">
               <h4 className="font-semibold text-[16px] leading-[22px]">
-                SITEMAP
+                {data.footer.subtitle1}
               </h4>
               <a href="#" className="text-[16px] leading-[26px]">
-                Home
+                {data.footer.link1}
               </a>
               <a href="#" className="text-[16px] leading-[26px]">
-                About Us
+                {data.footer.link2}
               </a>
               <a href="#" className="text-[16px] leading-[26px]">
-                Service
+                {data.footer.link3}
               </a>
               <a href="#" className="text-[16px] leading-[26px]">
-                Blog
+                {data.footer.link4}
               </a>
               <a href="#" className="text-[16px] leading-[26px]">
-                Contact
+                {data.footer.link5}
               </a>
             </li>
             <li className="flex flex-col gap-3">
               <h4 className="font-semibold text-[16px] leading-[22px]">
-                COMPANY
+                {data.footer.subtitle2}
               </h4>
               <a href="#" className="text-[16px] leading-[26px]">
-                Privacy Policy
+                {data.footer.link6}
               </a>
               <a href="#" className="text-[16px] leading-[26px]">
-                Terms & Condition
+                {data.footer.link7}
               </a>
               <a href="#" className="text-[16px] leading-[26px]">
-                404
+                {data.footer.link8}
               </a>
             </li>
             <li className="flex flex-col gap-3">
               <h4 className="font-semibold text-[16px] leading-[22px]">
-                SOCIAL MEDIA
+                {data.footer.subtitle3}
               </h4>
               <a href="#" className="text-[16px] leading-[26px]">
                 Twitter
@@ -134,7 +136,9 @@ const Footer = () => {
 
         <div className="flex  flex-col md:flex-row  items-center justify-between pt-[24px]">
           <p className="text-[14px] leading-[22px]">Copyright © Enima </p>
-          <p className="text-[14px] leading-[22px] mt-[14px] md:mt-0">Powered by Manasoft </p>
+          <p className="text-[14px] leading-[22px] mt-[14px] md:mt-0">
+          {data.footer.powered}
+          </p>
         </div>
       </div>
     </footer>

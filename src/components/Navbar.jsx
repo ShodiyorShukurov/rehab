@@ -1,14 +1,15 @@
 import React from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
+import data from '../mock/data.json';
 
 const menuVariants = {
   open: {
-    height: 'auto', 
-    maxHeight: 400, 
+    height: 'auto',
+    maxHeight: 400,
     opacity: 1,
     transition: {
-      duration: 0.5, 
+      duration: 0.5,
       ease: 'easeInOut',
       when: 'beforeChildren',
       staggerChildren: 0.1,
@@ -21,7 +22,7 @@ const menuVariants = {
     transition: {
       duration: 0.5,
       ease: 'easeInOut',
-      when: 'afterChildren', 
+      when: 'afterChildren',
     },
   },
 };
@@ -30,9 +31,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <header className="fixed md:top-3 z-30 w-full  bg-white">
+    <header className="fixed md:top-3 z-30 w-full bg-white md:bg-transparent">
       <div className="container">
-        <nav className="flex items-center justify-between py-[20px] md:p-[12px] md:rounded-[50px] md:border border-[#cfcfcf]">
+        <nav className="flex items-center justify-between py-[20px] bg-white md:p-[12px] md:rounded-[50px] md:border border-[#cfcfcf]">
           <div className="flex items-center space-x-2">
             <svg
               width="32"
@@ -63,21 +64,21 @@ const Navbar = () => {
 
           <div className="hidden md:flex space-x-3">
             <a href="#" className="text-black hover:text-blue-500">
-              Home
+              {data.navbar.nav1}
             </a>
             <a href="#" className="text-black hover:text-blue-500">
-              About Us
+              {data.navbar.nav2}
             </a>
             <a href="#" className="text-black hover:text-blue-500">
-              Services
+              {data.navbar.nav3}
             </a>
             <a href="#" className="text-black hover:text-blue-500">
-              Blog
+              {data.navbar.nav4}
             </a>
           </div>
 
           <button className="hidden md:flex items-center bg-[#007bbd] text-white px-[24px] py-[12px] rounded-full space-x-2 hover:bg-blue-600 group transition-all duration-300">
-            <span>Contact</span>
+            <span> {data.navbar.button_text}</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -111,19 +112,19 @@ const Navbar = () => {
           className="absolute top-[70px] left-0 w-full bg-white shadow-lg p-5 flex flex-col space-y-4 md:hidden overflow-hidden"
         >
           <a href="#" className="text-black hover:text-blue-500">
-            Home
+            {data.navbar.nav1}
           </a>
           <a href="#" className="text-black hover:text-blue-500">
-            About Us
+            {data.navbar.nav2}
           </a>
           <a href="#" className="text-black hover:text-blue-500">
-            Services
+            {data.navbar.nav3}
           </a>
           <a href="#" className="text-black hover:text-blue-500">
-            Blog
+            {data.navbar.nav4}
           </a>
           <button className="flex items-center bg-[#007bbd] text-white px-[24px] py-[12px] rounded-full space-x-2 hover:bg-blue-600 group transition-all duration-300 w-fit">
-            <span>Contact</span>
+            <span> {data.navbar.button_text}</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

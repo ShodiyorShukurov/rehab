@@ -1,4 +1,5 @@
 import React from 'react';
+import data from '../mock/data.json';
 
 const HeroSection = () => {
   return (
@@ -59,7 +60,7 @@ const HeroSection = () => {
                 fill="#7C7C7C"
               />
             </svg>
-            Best Medical Clinic
+            {data.hero.subtitle}
             <svg
               width="13"
               height="32"
@@ -114,18 +115,16 @@ const HeroSection = () => {
             </svg>
           </p>
           <h1 className="text-[28px] md:text-[32px] lg:text-[40px] leading-[31px] md:leading-[35px] lg:leading-[44px] font-semibold text-[#121418] text-center">
-            Your Trusted Partner in Health and Wellness
+            {data.hero.title}
           </h1>
           <p className="text-[#696969] text-center w-full max-w-[800px] mx-auto">
-            We provide personalized, high-quality care tailored to your needs.
-            Our compassionate team is dedicated to your overall health and
-            well-being.
+          {data.hero.text}
           </p>
 
           {/* Tugmalar */}
           <div className="flex justify-center space-x-4">
             <button className="bg-[#007bbd] text-white px-[24px] py-[12px] rounded-full flex items-center space-x-2 hover:bg-blue-600 group transition-all duration-300">
-              <span>Book a Call</span>
+              <span> {data.hero.button_text}</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -144,7 +143,7 @@ const HeroSection = () => {
             </button>
 
             <button className="text-[#121418] hover:text-blue-500">
-              Learn More
+            {data.hero.learn_more}
             </button>
           </div>
 
@@ -167,7 +166,7 @@ const HeroSection = () => {
               />
             </div>
             <div>
-              <p className="text-[#121418] font-semibold">Satisfied Customer</p>
+              <p className="text-[#121418] font-semibold"> {data.hero.customer}</p>
               <div className="flex items-center gap-3">
                 <div className="flex items-center space-x-1 text-[#007bbd]">
                   {[...Array(5)].map((_, i) => (
@@ -182,7 +181,7 @@ const HeroSection = () => {
                   ))}
                 </div>
 
-                <p className="text-gray-500">4.92 Reviews</p>
+                <p className="text-gray-500"> {data.hero.rating}</p>
               </div>
             </div>
           </div>

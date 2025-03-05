@@ -1,39 +1,41 @@
+import data from '../mock/data.json'
+
 const Testimonials = () => {
   const testimonials = [
     {
-      name: 'Sarah Mitchell',
-      role: 'Marketing Manager',
-      text: 'The doctors here are compassionate and thorough. I feel well-cared for every visit!',
+      name: data.testimonial.card1_title,
+      role: data.testimonial.card1_subtitle,
+      text: data.testimonial.card1_text,
       image: 'https://randomuser.me/api/portraits/women/1.jpg',
     },
     {
-      name: 'James Carter',
-      role: 'Sales Executive',
-      text: 'I had a great experience with the staff and facilities. Everything was so modern and efficient!',
+      name: data.testimonial.card2_title,
+      role: data.testimonial.card2_subtitle,
+      text: data.testimonial.card2_text,
       image: 'https://randomuser.me/api/portraits/men/1.jpg',
     },
     {
-      name: 'Jessica A',
-      role: 'Marketing Manager',
-      text: 'I appreciate the thorough care and attention to detail during each visit.',
+      name: data.testimonial.card3_title,
+      role: data.testimonial.card3_subtitle,
+      text: data.testimonial.card3_text,
       image: 'https://randomuser.me/api/portraits/women/2.jpg',
     },
     {
-      name: 'Adrian David',
-      role: 'Influencer',
-      text: 'The physicians are caring and attentive. I always feel supported during my visits!',
+      name: data.testimonial.card4_title,
+      role: data.testimonial.card4_subtitle,
+      text: data.testimonial.card4_text,
       image: 'https://randomuser.me/api/portraits/men/2.jpg',
     },
     {
-      name: 'Angela S',
-      role: 'Marketing Manager',
-      text: 'The doctors here are kind and meticulous. I feel truly cared for each visit!',
+      name: data.testimonial.card5_title,
+      role: data.testimonial.card5_subtitle,
+      text: data.testimonial.card5_text,
       image: 'https://randomuser.me/api/portraits/women/3.jpg',
     },
     {
-      name: 'David L',
-      role: 'Influencer',
-      text: 'Doctors here truly listen and address all my concerns.',
+      name: data.testimonial.card6_title,
+      role: data.testimonial.card6_subtitle,
+      text: data.testimonial.card6_text,
       image: 'https://randomuser.me/api/portraits/men/3.jpg',
     },
   ];
@@ -47,9 +49,9 @@ const Testimonials = () => {
     >
       <div className="container">
         <div className="text-center mb-8">
-          <h2 className="text-[28px] md:text-[32px] 2xl:text-[36px] leading-[39px] md:leading-[45px] 2xl:leading-[50px] font-semibold">Our Patient Testimonials</h2>
+          <h2 className="text-[28px] md:text-[32px] 2xl:text-[36px] leading-[39px] md:leading-[45px] 2xl:leading-[50px] font-semibold">{data.testimonial.title}</h2>
           <p className="text-gray-600">
-            Read their stories to see the real impact of our medical services
+          {data.testimonial.text}
           </p>
         </div>
         <div className="grid md:grid-cols-2 2xl:grid-cols-3 gap-6">

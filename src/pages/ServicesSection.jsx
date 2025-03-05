@@ -1,29 +1,26 @@
 import React, { useState } from 'react';
 import { ArrowUpRight, Play } from 'lucide-react';
+import data from '../mock/data.json';
 
 const services = [
   {
-    title: 'Dental Services',
-    description:
-      'Comprehensive dental care for maintaining oral health and treating dental issues.',
+    title: data.services.card1_title,
+    description: data.services.card1_text,
     image: 'https://placehold.co/80x60',
   },
   {
-    title: 'Dermatology',
-    description:
-      'Expert skin care treatments for conditions ranging from acne to eczema and more.',
+    title: data.services.card2_title,
+    description: data.services.card2_text,
     image: 'https://placehold.co/80x60',
   },
   {
-    title: 'Physiotherapy',
-    description:
-      'Personalized therapy programs to help you recover mobility and improve physical function.',
+    title: data.services.card3_title,
+    description: data.services.card3_text,
     image: 'https://placehold.co/80x60',
   },
   {
-    title: "Children's Health",
-    description:
-      'Compassionate pediatric care, focusing on the health and well-being of your child.',
+    title: data.services.card4_title,
+    description: data.services.card4_text,
     image: 'https://placehold.co/80x60',
   },
 ];
@@ -41,14 +38,13 @@ const ServicesSection = () => {
                 <span className="w-[8px] h-[8px] flex items-center text-[30px]">
                   •
                 </span>
-                Services
+                {data.services.services}
               </h4>
               <h2 className="text-[20px] md:text-[24px] font-semibold leading-[28px] md:leading-[34px] my-6">
-                Healthcare Across Multiple Specialties
+                {data.services.title}
               </h2>
               <p className="text-[#fffc] text-[18px] leading-[29px] max-w-[352px]">
-                From pediatric care to specialized treatments, our experienced
-                team is dedicated to providing the highest quality care.
+                {data.services.text}
               </p>
             </div>
 
@@ -76,21 +72,22 @@ const ServicesSection = () => {
                   key={index}
                   className="flex md:items-center md:justify-between flex-col md:flex-row border-y p-6 cursor-pointer hover:bg-[#f7f7f7]"
                 >
-                  
                   <img
                     src={service.image}
                     alt={service.title}
                     className="w-[160px] h-[110px] rounded-[16px] object-cover"
                   />
                   <div>
-                    <h3 className="text-[20px] md:text-[24px] leading-[28px] md:leading-[34px] text-[#121418] font-semibold mt-[12px] md:mt-0">{service.title}</h3>
+                    <h3 className="text-[20px] md:text-[24px] leading-[28px] md:leading-[34px] text-[#121418] font-semibold mt-[12px] md:mt-0">
+                      {service.title}
+                    </h3>
                     <p className="text-[16px] leading-[26px] text-[#696969] max-w-[380px] mt-[8px]">
                       {service.description}
                     </p>
                   </div>
-                 <button className='w-[48px] h-[48px] bg-transparent hover:bg-[#121418] flex justify-center items-center rounded-full text-[#121418] hover:text-white transition-all duration-300'>
-                 <ArrowUpRight className="w-6 h-6 stroke-current" />
-                 </button>
+                  <button className="w-[48px] h-[48px] bg-transparent hover:bg-[#121418] flex justify-center items-center rounded-full text-[#121418] hover:text-white transition-all duration-300">
+                    <ArrowUpRight className="w-6 h-6 stroke-current" />
+                  </button>
                 </div>
               ))}
             </div>

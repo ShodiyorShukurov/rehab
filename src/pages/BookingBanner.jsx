@@ -1,6 +1,8 @@
+import data from '../mock/data.json'
+
 const BookingBanner = () => {
   return (
-    <section className=" text-white text-center py-12">
+    <section className=" text-white text-center py-[100px]">
       <div className="container">
         <div className="bg-[#007bbd] py-[40px] rounded-[16px]">
           <p className="text-[#fff] text-center text-[14px] flex gap-2 items-center justify-center">
@@ -56,7 +58,7 @@ const BookingBanner = () => {
                 fill="#fff"
               />
             </svg>
-            Best Medical Clinic
+            {data.banner.subtitle}
             <svg
               width="13"
               height="32"
@@ -111,11 +113,10 @@ const BookingBanner = () => {
             </svg>
           </p>
           <h2 className="text-[18px] md:text-[24px] leading-[25px] md:leading-[34px] font-semibold max-w-[960px] mx-auto mt-[24px]">
-            Take control of your health today—schedule your appointment now and
-            experience personalized, compassionate care!
+          {data.banner.title}
           </h2>
           <button className="mt-6 px-6 py-3 bg-white text-[#696969] rounded-full hover:bg-gray-100 transition">
-            Book a Call
+          {data.banner.button_text}
           </button>
         </div>
       </div>
