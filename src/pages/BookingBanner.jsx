@@ -3,7 +3,7 @@ const BookingBanner = () => {
     <section className=" text-white text-center py-12">
       <div className="container">
         <div className="bg-[#007bbd] py-[40px] rounded-[16px]">
-          <p className="text-white text-center flex gap-2 items-center justify-center">
+          <p className="text-[#fff] text-center text-[14px] flex gap-2 items-center justify-center">
             <svg
               width="13"
               height="32"
@@ -110,7 +110,7 @@ const BookingBanner = () => {
               />
             </svg>
           </p>
-          <h2 className="text-xl md:text-2xl font-semibold max-w-[960px] mx-auto mt-[24px]">
+          <h2 className="text-[18px] md:text-[24px] leading-[25px] md:leading-[34px] font-semibold max-w-[960px] mx-auto mt-[24px]">
             Take control of your health today—schedule your appointment now and
             experience personalized, compassionate care!
           </h2>

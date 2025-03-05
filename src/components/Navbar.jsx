@@ -30,9 +30,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <header className="fixed md:top-3 z-30 w-full">
+    <header className="fixed md:top-3 z-30 w-full  bg-white">
       <div className="container">
-        <nav className="flex items-center justify-between py-[20px] md:p-[12px] bg-white md:rounded-[50px] md:border border-[#cfcfcf]">
+        <nav className="flex items-center justify-between py-[20px] md:p-[12px] md:rounded-[50px] md:border border-[#cfcfcf]">
           <div className="flex items-center space-x-2">
             <svg
               width="32"
@@ -108,7 +108,7 @@ const Navbar = () => {
           variants={menuVariants}
           initial="closed"
           animate={isOpen ? 'open' : 'closed'}
-          className="absolute top-[80px] left-0 w-full bg-white shadow-lg p-5 flex flex-col space-y-4 md:hidden overflow-hidden"
+          className="absolute top-[70px] left-0 w-full bg-white shadow-lg p-5 flex flex-col space-y-4 md:hidden overflow-hidden"
         >
           <a href="#" className="text-black hover:text-blue-500">
             Home

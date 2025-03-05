@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#121418] text-white py-[48px]">
       <div className="container">
-        <div className="flex justify-between items-center w-full pb-6 border-b-[1px] border-[#505254]">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center w-full pb-6 border-b-[1px] border-[#505254]">
           <div className="flex flex-col">
             <div className="flex items-center space-x-2">
               <svg
@@ -34,12 +34,12 @@ const Footer = () => {
                 Enima
               </h4>
             </div>
-            <p className="text-[16px] leading-[26px] mt-[16px] max-w-[360px]">
+            <p className="text-[16px] leading-[26px] mt-[16px] md:max-w-[360px] mb-[40px] md:mb-0">
               Your Health, Our Priority.Compassionate Care, Expert Solutions.
             </p>
           </div>
 
-          <div className="flex gap-6 pr-6">
+          <div className="flex flex-col md:flex-row gap-6 md:pr-6">
             <div className="flex flex-col gap-1">
               <h4 className="font-semibold text-[16px] leading-[22px]">
                 EMAIL ADDRESS
@@ -62,8 +62,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-between py-[24px] border-b-[1px] border-[#505254]">
-          <div className="flex flex-col gap-1">
+        <div className="flex flex-col md:flex-row justify-between py-[24px] border-b-[1px] border-[#505254]">
+          <div className="flex  flex-col gap-1">
             <h4 className="font-semibold text-[16px] leading-[22px]">
               CLINIC HOURS
             </h4>
@@ -75,9 +75,9 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="border-[0.1px] border-[#505254] h-[230px]"></div>
+          <div className="hidden md:block border-l-[1px] border-[#505254] h-[230px]"></div>
 
-          <ul className="flex justify-between gap-10 pr-6">
+          <ul className="flex  flex-col md:flex-row  justify-between gap-10 mt-[50px] md:mt-0 md:pr-6">
             <li className="flex flex-col gap-3">
               <h4 className="font-semibold text-[16px] leading-[22px]">
                 SITEMAP
@@ -132,9 +132,9 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex justify-between pt-[24px]">
+        <div className="flex  flex-col md:flex-row  items-center justify-between pt-[24px]">
           <p className="text-[14px] leading-[22px]">Copyright © Enima </p>
-          <p className="text-[14px] leading-[22px]">Powered by Manasoft </p>
+          <p className="text-[14px] leading-[22px] mt-[14px] md:mt-0">Powered by Manasoft </p>
         </div>
       </div>
     </footer>

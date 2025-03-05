@@ -53,13 +53,13 @@ const ServicesSection = () => {
             </div>
 
             <div
-              className="relative cursor-pointer"
+              className="relative cursor-pointer max-h-[360px]"
               onClick={() => setIsOpen(true)}
             >
               <img
                 src="https://placehold.co/400x250"
                 alt="Doctor consultation"
-                className="w-full rounded-[16px] "
+                className="w-full rounded-[16px] max-h-[360px] object-cover"
               />
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 hover:bg-opacity-30 transition-all rounded-[16px]">
                 <button className="bg-white p-3 rounded-full shadow-lg">

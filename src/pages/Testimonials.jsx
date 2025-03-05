@@ -39,15 +39,20 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-12 bg-[#F7F7F7]">
+    <section
+      className="py-[100px] bg-[#F7F7F7]"
+      style={{
+        mask: 'linear-gradient(rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%)',
+      }}
+    >
       <div className="container">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold">Our Patient Testimonials</h2>
+          <h2 className="text-[28px] md:text-[32px] 2xl:text-[36px] leading-[39px] md:leading-[45px] 2xl:leading-[50px] font-semibold">Our Patient Testimonials</h2>
           <p className="text-gray-600">
             Read their stories to see the real impact of our medical services
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 2xl:grid-cols-3 gap-6">
           {testimonials.map((t, index) => (
             <div key={index} className="bg-white p-6 rounded-[16px]">
               <div className="flex items-center justify-between gap-4 mb-4">

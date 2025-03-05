@@ -20,11 +20,11 @@ const App = () => {
         <FeaturesSection />
         <Features />
         <ServicesSection />
-        {/* <DoctorsSection /> */}
-        {/* <Testimonials /> */}
-        {/* <BookingBanner /> */}
+        <DoctorsSection />
+        <Testimonials />
+        <BookingBanner />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
