@@ -1,0 +1,144 @@
+const Footer = () => {
+  return (
+    <footer className="bg-[#121418] text-white py-[48px]">
+      <div className="container">
+        <div className="flex justify-between items-center w-full pb-6 border-b-[1px] border-[#505254]">
+          <div className="flex flex-col">
+            <div className="flex items-center space-x-2">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.3333 8.5C16.3333 12.6421 12.9754 16 8.83325 16H1.33325V8.5C1.33325 4.35786 4.69111 1 8.83325 1C12.9754 1 16.3333 4.35786 16.3333 8.5Z"
+                  fill="#fff"
+                />
+                <path
+                  d="M16.3333 23.5C16.3333 19.3579 19.6911 16 23.8333 16H31.3333V23.5C31.3333 27.6421 27.9754 31 23.8333 31C19.6911 31 16.3333 27.6421 16.3333 23.5Z"
+                  fill="#fff"
+                />
+                <path
+                  d="M1.33325 23.5C1.33325 27.6421 4.69111 31 8.83325 31H16.3333V23.5C16.3333 19.3579 12.9754 16 8.83325 16C4.69111 16 1.33325 19.3579 1.33325 23.5Z"
+                  fill="#fff"
+                />
+                <path
+                  d="M31.3333 8.5C31.3333 4.35786 27.9754 1 23.8333 1H16.3333V8.5C16.3333 12.6421 19.6911 16 23.8333 16C27.9754 16 31.3333 12.6421 31.3333 8.5Z"
+                  fill="#fff"
+                />
+              </svg>
+
+              <h4 className="font-semibold text-[24px] leading-[34px]">
+                Enima
+              </h4>
+            </div>
+            <p className="text-[16px] leading-[26px] mt-[16px] max-w-[360px]">
+              Your Health, Our Priority.Compassionate Care, Expert Solutions.
+            </p>
+          </div>
+
+          <div className="flex gap-6 pr-6">
+            <div className="flex flex-col gap-1">
+              <h4 className="font-semibold text-[16px] leading-[22px]">
+                EMAIL ADDRESS
+              </h4>
+              <a
+                href="malito:enima@mail.com"
+                className="text-[14px] leading-[22px]"
+              >
+                enima@mail.com
+              </a>
+            </div>
+            <div className="flex flex-col gap-1">
+              <h4 className="font-semibold text-[16px] leading-[22px]">
+                PHONE NUMBER
+              </h4>
+              <a href="tel:(+1) 2912324" className="text-[14px] leading-[22px]">
+                (+1) 2912324
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-between py-[24px] border-b-[1px] border-[#505254]">
+          <div className="flex flex-col gap-1">
+            <h4 className="font-semibold text-[16px] leading-[22px]">
+              CLINIC HOURS
+            </h4>
+            <p className="text-[14px] leading-[22px] text-[#fffc]">
+              Weekdays: 09:00 - 18:00
+            </p>
+            <p className="text-[14px] leading-[22px] text-[#fffc]">
+              Weekend: 09:00 - 15:00
+            </p>
+          </div>
+
+          <div className="border-[0.1px] border-[#505254] h-[230px]"></div>
+
+          <ul className="flex justify-between gap-10 pr-6">
+            <li className="flex flex-col gap-3">
+              <h4 className="font-semibold text-[16px] leading-[22px]">
+                SITEMAP
+              </h4>
+              <a href="#" className="text-[16px] leading-[26px]">
+                Home
+              </a>
+              <a href="#" className="text-[16px] leading-[26px]">
+                About Us
+              </a>
+              <a href="#" className="text-[16px] leading-[26px]">
+                Service
+              </a>
+              <a href="#" className="text-[16px] leading-[26px]">
+                Blog
+              </a>
+              <a href="#" className="text-[16px] leading-[26px]">
+                Contact
+              </a>
+            </li>
+            <li className="flex flex-col gap-3">
+              <h4 className="font-semibold text-[16px] leading-[22px]">
+                COMPANY
+              </h4>
+              <a href="#" className="text-[16px] leading-[26px]">
+                Privacy Policy
+              </a>
+              <a href="#" className="text-[16px] leading-[26px]">
+                Terms & Condition
+              </a>
+              <a href="#" className="text-[16px] leading-[26px]">
+                404
+              </a>
+            </li>
+            <li className="flex flex-col gap-3">
+              <h4 className="font-semibold text-[16px] leading-[22px]">
+                SOCIAL MEDIA
+              </h4>
+              <a href="#" className="text-[16px] leading-[26px]">
+                Twitter
+              </a>
+              <a href="#" className="text-[16px] leading-[26px]">
+                Instagram
+              </a>
+              <a href="#" className="text-[16px] leading-[26px]">
+                Linkedin
+              </a>
+              <a href="#" className="text-[16px] leading-[26px]">
+                Facebook
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="flex justify-between pt-[24px]">
+          <p className="text-[14px] leading-[22px]">Copyright © Enima </p>
+          <p className="text-[14px] leading-[22px]">Powered by Manasoft </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
