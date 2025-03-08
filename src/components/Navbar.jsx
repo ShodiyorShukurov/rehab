@@ -59,7 +59,7 @@ const Navbar = () => {
                 fill="#007BBD"
               />
             </svg>
-            <span className="text-xl font-bold text-gray-800">Enima</span>
+            <span className="text-xl font-bold text-gray-800">Рехаб</span>
           </div>
 
           <div className="hidden md:flex space-x-3">

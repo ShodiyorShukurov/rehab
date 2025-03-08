@@ -33,7 +33,7 @@ const Footer = () => {
               </svg>
 
               <h4 className="font-semibold text-[24px] leading-[34px]">
-                Enima
+              Рехаб
               </h4>
             </div>
             <p className="text-[16px] leading-[26px] mt-[16px] md:max-w-[360px] mb-[40px] md:mb-0">
@@ -135,7 +135,7 @@ const Footer = () => {
         </div>
 
         <div className="flex  flex-col md:flex-row  items-center justify-between pt-[24px]">
-          <p className="text-[14px] leading-[22px]">Copyright © Enima </p>
+          <p className="text-[14px] leading-[22px]">Copyright © Рехаб </p>
           <p className="text-[14px] leading-[22px] mt-[14px] md:mt-0">
           {data.footer.powered}
           </p>
