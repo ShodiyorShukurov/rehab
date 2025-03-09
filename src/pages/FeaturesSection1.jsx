@@ -46,10 +46,10 @@ const FeaturesSection = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-[18px] text-[#121418] leading-[25px]">
-                  {data.features.customer_count}
+                    {data.features.customer_count}
                   </p>
                   <span className="text-[#696969] text-[16px] leading-[26px]">
-                  {data.features.member}
+                    {data.features.member}
                   </span>
                 </div>
               </div>
@@ -59,15 +59,15 @@ const FeaturesSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-[#007bbd] text-white p-6 rounded-[16px] h-[280px]">
               <h3 className="text-[20px] md:text-[24px] font-semibold leading-[28px] md:leading-[34px]">
-              {data.features.card5_title}
+                {data.features.card5_title}
               </h3>
               <p className="text-[16px] leading-[26px] text-[#fffc] mt-[16px]">
-              {data.features.card5_text}
+                {data.features.card5_text}
               </p>
             </div>
 
             <div
-              className="relative cursor-pointer h-[280px]"
+              className="relative group cursor-pointer h-[280px]"
               onClick={() => setIsOpen(true)}
             >
               <img
@@ -75,14 +75,16 @@ const FeaturesSection = () => {
                 alt="Doctor explaining"
                 className="w-full h-[280px] rounded-[16px] object-cover"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 hover:bg-opacity-30 transition-all rounded-[16px]">
-                <button className="bg-white p-3 rounded-full shadow-lg">
+              <div className="absolute inset-0 flex  group-hover:flex-row items-center justify-center bg-black bg-opacity-20 group-hover:bg-opacity-30 transition-all duration-1000 rounded-lg">
+                <button className="bg-white p-3 rounded-full shadow-lg relative">
                   <Play className="w-8 h-8 text-blue-500" />
                 </button>
+                <span className="text-white text-sm mt-2 opacity-0 group-hover:opacity-100 group-hover:ml-2 hidden group-hover:block transition-opacity">
+                  Play Video
+                </span>
               </div>
             </div>
 
-            {/* Uchinchi kartochka */}
             <div className="h-[280px]">
               <img
                 src="https://placehold.co/300x200"
@@ -93,10 +95,10 @@ const FeaturesSection = () => {
 
             <div className="bg-[#F7F7F7] p-6 rounded-[16px] h-[280px]">
               <h3 className="text-[20px] md:text-[24px] font-semibold leading-[28px] md:leading-[34px]">
-              {data.features.card6_title}
+                {data.features.card6_title}
               </h3>
               <p className="text-[16px] text-[#696969] mt-[16px] leading-[26px]">
-              {data.features.card6_text}
+                {data.features.card6_text}
               </p>
             </div>
           </div>
@@ -107,7 +109,7 @@ const FeaturesSection = () => {
               onClick={() => setIsOpen(false)}
             >
               <div
-                className="rounded-[16px] max-w-2xl w-full relative p-[20px]"
+                className="rounded-[16px] max-w-[1000px] w-full relative p-[20px]"
                 onClick={(e) => e.stopPropagation()}
               >
                 {/* Video */}

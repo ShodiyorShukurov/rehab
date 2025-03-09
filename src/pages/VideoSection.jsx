@@ -18,11 +18,11 @@ const VideoModal = () => {
               alt="Thumbnail"
               className="w-full max-w-[820px] rounded-lg"
             />
-            <div className="absolute inset-0 flex flex-col group-hover:flex-row items-center justify-center bg-black bg-opacity-20 group-hover:bg-opacity-30 transition-all rounded-lg">
+            <div className="absolute inset-0 flex  group-hover:flex-row items-center justify-center bg-black bg-opacity-20 group-hover:bg-opacity-30 transition-all duration-1000 rounded-lg">
               <button className="bg-white p-3 rounded-full shadow-lg relative">
                 <Play className="w-8 h-8 text-blue-500" />
               </button>
-              <span className="text-white text-sm mt-2 opacity-0 group-hover:opacity-100 group-hover:ml-2 transition-opacity">
+              <span className="text-white text-sm mt-2 opacity-0 group-hover:opacity-100 group-hover:ml-2 hidden group-hover:block transition-opacity">
                 Play Video
               </span>
             </div>
@@ -35,7 +35,7 @@ const VideoModal = () => {
             onClick={() => setIsOpen(false)}
           >
             <div
-              className="rounded-[16px] max-w-2xl w-full relative p-[20px]"
+              className="rounded-[16px] max-w-[1000px] w-full relative p-[20px]"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Video */}

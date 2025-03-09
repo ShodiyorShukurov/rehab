@@ -49,7 +49,7 @@ const ServicesSection = () => {
             </div>
 
             <div
-              className="relative cursor-pointer max-h-[360px]"
+              className="relative cursor-pointer group max-h-[360px]"
               onClick={() => setIsOpen(true)}
             >
               <img
@@ -57,10 +57,13 @@ const ServicesSection = () => {
                 alt="Doctor consultation"
                 className="w-full rounded-[16px] max-h-[360px] object-cover"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 hover:bg-opacity-30 transition-all rounded-[16px]">
-                <button className="bg-white p-3 rounded-full shadow-lg">
+              <div className="absolute inset-0 flex  group-hover:flex-row items-center justify-center bg-black bg-opacity-20 group-hover:bg-opacity-30 transition-all duration-1000 rounded-lg">
+                <button className="bg-white p-3 rounded-full shadow-lg relative">
                   <Play className="w-8 h-8 text-blue-500" />
                 </button>
+                <span className="text-white text-sm mt-2 opacity-0 group-hover:opacity-100 group-hover:ml-2 hidden group-hover:block transition-opacity">
+                  Play Video
+                </span>
               </div>
             </div>
           </div>
@@ -71,6 +74,8 @@ const ServicesSection = () => {
                 <div
                   key={index}
                   className="flex md:items-center md:justify-between flex-col md:flex-row border-y p-6 cursor-pointer hover:bg-[#f7f7f7]"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
                 >
                   <img
                     src={service.image}
@@ -98,7 +103,7 @@ const ServicesSection = () => {
               className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
               onClick={() => setIsOpen(false)}
             >
-              <div className="rounded-[16px] max-w-2xl w-full relative p-[20px]">
+              <div className="rounded-[16px] max-w-[1000px] w-full relative p-[20px]">
                 <button
                   className="absolute top-4 right-4 text-gray-600 hover:text-gray-800"
                   onClick={() => setIsOpen(false)}

@@ -58,7 +58,11 @@ const FeaturesSection = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-6 mt-[24px]">
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-6 mt-[24px]"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           {features.map((feature, index) => (
             <div
               key={index}
