@@ -1,27 +1,32 @@
 import React, { useState } from 'react';
 import { ArrowUpRight, Play } from 'lucide-react';
 import data from '../mock/data.json';
+import servicesMainImg from '../assets/service-main-img.jpg';
+import services1 from '../assets/services1.jpg';
+import services2 from '../assets/services2.jpg';
+import services3 from '../assets/services3.jpg';
+import services4 from '../assets/services4.jpg';
 
 const services = [
   {
     title: data.services.card1_title,
     description: data.services.card1_text,
-    image: 'https://placehold.co/80x60',
+    image: services1,
   },
   {
     title: data.services.card2_title,
     description: data.services.card2_text,
-    image: 'https://placehold.co/80x60',
+    image: services2,
   },
   {
     title: data.services.card3_title,
     description: data.services.card3_text,
-    image: 'https://placehold.co/80x60',
+    image: services3,
   },
   {
     title: data.services.card4_title,
     description: data.services.card4_text,
-    image: 'https://placehold.co/80x60',
+    image: services4,
   },
 ];
 
@@ -50,20 +55,20 @@ const ServicesSection = () => {
 
             <div
               className="relative cursor-pointer group max-h-[360px]"
-              onClick={() => setIsOpen(true)}
+              // onClick={() => setIsOpen(true)}
             >
               <img
-                src="https://placehold.co/400x250"
+                src={servicesMainImg}
                 alt="Doctor consultation"
                 className="w-full rounded-[16px] max-h-[360px] object-cover"
               />
               <div className="absolute inset-0 flex  group-hover:flex-row items-center justify-center bg-black bg-opacity-20 group-hover:bg-opacity-30 transition-all duration-1000 rounded-lg">
-                <button className="bg-white p-3 rounded-full shadow-lg relative">
+                {/* <button className="bg-white p-3 rounded-full shadow-lg relative">
                   <Play className="w-8 h-8 text-blue-500" />
                 </button>
                 <span className="text-white text-sm mt-2 opacity-0 group-hover:opacity-100 group-hover:ml-2 hidden group-hover:block transition-opacity">
                   Play Video
-                </span>
+                </span> */}
               </div>
             </div>
           </div>

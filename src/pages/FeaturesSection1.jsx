@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Play } from 'lucide-react';
 import data from '../mock/data.json';
+import featureSection1 from '../assets/feature-section1.jpg';
+import featureSection2 from '../assets/feature-section2.jpg';
 
 const FeaturesSection = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,26 +70,26 @@ const FeaturesSection = () => {
 
             <div
               className="relative group cursor-pointer h-[280px]"
-              onClick={() => setIsOpen(true)}
+              // onClick={() => setIsOpen(true)}
             >
               <img
-                src="https://placehold.co/300x200"
+                src={featureSection1}
                 alt="Doctor explaining"
                 className="w-full h-[280px] rounded-[16px] object-cover"
               />
               <div className="absolute inset-0 flex  group-hover:flex-row items-center justify-center bg-black bg-opacity-20 group-hover:bg-opacity-30 transition-all duration-1000 rounded-lg">
-                <button className="bg-white p-3 rounded-full shadow-lg relative">
+                {/* <button className="bg-white p-3 rounded-full shadow-lg relative">
                   <Play className="w-8 h-8 text-blue-500" />
                 </button>
                 <span className="text-white text-sm mt-2 opacity-0 group-hover:opacity-100 group-hover:ml-2 hidden group-hover:block transition-opacity">
                   Play Video
-                </span>
+                </span> */}
               </div>
             </div>
 
             <div className="h-[280px]">
               <img
-                src="https://placehold.co/300x200"
+                src={featureSection2}
                 alt="Reception"
                 className="w-full h-[280px] rounded-[16px] object-cover"
               />

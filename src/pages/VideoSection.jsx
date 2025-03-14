@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Play } from 'lucide-react';
+import videoImg from '../assets/video-section.jpg';
 
 const VideoModal = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,21 +11,21 @@ const VideoModal = () => {
         <div className="flex justify-center">
           <div
             className="relative cursor-pointer group w-full max-w-[820px]"
-            onClick={() => setIsOpen(true)}
+            // onClick={() => setIsOpen(true)}
             style={{mask: "linear-gradient(rgb(0, 0, 0) 58%, rgba(0, 0, 0, 0) 100%)"}}
           >
             <img
-              src="https://placehold.co/600x400"
+              src={videoImg}
               alt="Thumbnail"
               className="w-full max-w-[820px] rounded-lg"
             />
             <div className="absolute inset-0 flex  group-hover:flex-row items-center justify-center bg-black bg-opacity-20 group-hover:bg-opacity-30 transition-all duration-1000 rounded-lg">
-              <button className="bg-white p-3 rounded-full shadow-lg relative">
+              {/* <button className="bg-white p-3 rounded-full shadow-lg relative">
                 <Play className="w-8 h-8 text-blue-500" />
               </button>
               <span className="text-white text-sm mt-2 opacity-0 group-hover:opacity-100 group-hover:ml-2 hidden group-hover:block transition-opacity">
                 Play Video
-              </span>
+              </span> */}
             </div>
           </div>
         </div>
