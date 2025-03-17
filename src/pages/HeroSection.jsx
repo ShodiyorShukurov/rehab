@@ -123,7 +123,7 @@ const HeroSection = () => {
 
           {/* Tugmalar */}
           <div className="flex justify-center space-x-4">
-            <button className="bg-[#007bbd] text-white px-[24px] py-[12px] rounded-full flex items-center space-x-2 hover:bg-blue-600 group transition-all duration-300">
+            <a href='tel:+998942021984' className="bg-[#007bbd] text-white px-[24px] py-[12px] rounded-full flex items-center space-x-2 hover:bg-blue-600 group transition-all duration-300">
               <span> {data.hero.button_text}</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +140,7 @@ const HeroSection = () => {
                 <line x1="7" y1="17" x2="17" y2="7"></line>
                 <polyline points="7 7 17 7 17 17"></polyline>
               </svg>
-            </button>
+            </a>
 
             <button className="text-[#121418] hover:text-blue-500">
             {data.hero.learn_more}

@@ -54,7 +54,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          <button className="hidden md:flex items-center bg-[#007bbd] text-white px-[24px] py-[12px] rounded-full space-x-2 hover:bg-blue-600 group transition-all duration-300">
+          <a href='tel:+998942021984' className="hidden md:flex items-center bg-[#007bbd] text-white px-[24px] py-[12px] rounded-full space-x-2 hover:bg-blue-600 group transition-all duration-300">
             <span> {data.navbar.button_text}</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ const Navbar = () => {
               <line x1="7" y1="17" x2="17" y2="7"></line>
               <polyline points="7 7 17 7 17 17"></polyline>
             </svg>
-          </button>
+          </a>
 
           <button
             className="block md:hidden"

@@ -1,26 +1,36 @@
 import { Linkedin } from 'lucide-react';
 import data from '../mock/data.json'
+import card1Img from '../assets/card-1.png'
+import card2Img from '../assets/card-2.png'
+import card3Img from '../assets/card-3.png'
+import card4Img from '../assets/card-4.png'
+import card5Img from '../assets/card-5.png'
 
 const doctors = [
   {
     name: data.doctors.card1_title,
     specialty: data.doctors.card1_text,
-    image: 'https://placehold.co/300',
+    image: card1Img,
   },
   {
     name: data.doctors.card2_title,
     specialty: data.doctors.card2_text,
-    image: 'https://placehold.co/300',
+    image: card2Img,
   },
   {
     name: data.doctors.card3_title,
     specialty: data.doctors.card3_text,
-    image: 'https://placehold.co/300',
+    image: card3Img,
   },
   {
     name: data.doctors.card4_title,
     specialty: data.doctors.card4_text,
-    image: 'https://placehold.co/300',
+    image: card4Img,
+  },
+  {
+    name: data.doctors.card5_title,
+    specialty: data.doctors.card5_text,
+    image: card5Img,
   },
 ];
 
@@ -34,16 +44,14 @@ const DoctorsSection =()=> {
           </span>
           {data.doctors.teams}
         </h4>
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center my-8">
+        <div className=" my-8">
           <div>
             <h2 className="text-[32px] 2xl:text-[36px] leading-[45px] 2xl:leading-[50px] font-semibold text-[#121418]">{data.doctors.title}</h2>
             <p className="text-[#696969] text-[16px] leading-[26px] mt-[10px]">
               {data.doctors.text}
             </p>
           </div>
-          <button className="bg-[#007bbd] text-white px-[24px] py-[12px] rounded-full text-[16px] leading-[26px] w-fit mt-[24px] md:mt-0">
-           {data.doctors.button_text}
-          </button>
+
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-6">
@@ -52,9 +60,9 @@ const DoctorsSection =()=> {
               <img
                 src={doctor.image}
                 alt={doctor.name}
-                className="w-full h-[395px] object-cover rounded-[16px]"
+                className="w-full h-[395px] object-cover rounded-[16px] border p-2"
               />
-              <div className="mt-4 flex justify-between w-full">
+              <div className="mt-4 w-full">
                 <div>
                   <h3 className="text-[18px] md:text-[20px] font-semibold leading-[25px] md:leading-[28px] text-[#121418]">
                     {doctor.name}
@@ -63,7 +71,6 @@ const DoctorsSection =()=> {
                     {doctor.specialty}
                   </p>
                 </div>
-                <Linkedin className="stroke-[#121418] text-xl cursor-pointer" />
               </div>
             </div>
           ))}
