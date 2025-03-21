@@ -14327,8 +14327,8 @@ const Footer = () => {
               <h4 className="font-semibold text-[16px] leading-[22px]">
                 {data.footer.phone_number}
               </h4>
-              <a href="tel:(+1) 2912324" className="text-[14px] leading-[22px]">
-                (+1) 2912324
+              <a href="tel:+998942021984" className="text-[14px] leading-[22px]">
+                +998942021984
               </a>
             </div>
           </div>
@@ -14357,13 +14357,13 @@ const Footer = () => {
               <a href="#" className="text-[16px] leading-[26px]">
                 {data.footer.link1}
               </a>
-              <a href="#" className="text-[16px] leading-[26px]">
+              <a href="#about" className="text-[16px] leading-[26px]">
                 {data.footer.link2}
               </a>
-              <a href="#" className="text-[16px] leading-[26px]">
+              <a href="#service" className="text-[16px] leading-[26px]">
                 {data.footer.link3}
               </a>
-              <a href="#" className="text-[16px] leading-[26px]">
+              <a href="#team" className="text-[16px] leading-[26px]">
                 {data.footer.link4}
               </a>
               <a href="#" className="text-[16px] leading-[26px]">
@@ -14405,10 +14405,10 @@ const Footer = () => {
         </div>
 
         <div className="flex  flex-col md:flex-row  items-center justify-between pt-[24px]">
-          <p className="text-[14px] leading-[22px]">Copyright © Рехаб </p>
-          <p className="text-[14px] leading-[22px] mt-[14px] md:mt-0">
+          <p className="text-[14px] leading-[22px]">Copyright © VectorLife </p>
+          <a href='https://manasoft.uz/'  target="_blank" className="text-[14px] leading-[22px] mt-[14px] md:mt-0">
             {data.footer.powered}
-          </p>
+          </a>
         </div>
       </div>
     </footer>

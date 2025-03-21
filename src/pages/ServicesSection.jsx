@@ -34,7 +34,7 @@ const ServicesSection = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="pt-[120px]">
+    <section className="pt-[120px]" id='service'>
       <div className="container">
         <div className="grid grid-cols-1 2xl:grid-cols-3 md:gap-6">
           <div className="flex flex-col gap-4">

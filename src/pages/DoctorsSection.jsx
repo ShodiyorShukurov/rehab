@@ -36,7 +36,7 @@ const doctors = [
 
 const DoctorsSection =()=> {
   return (
-    <section className="py-[100px]">
+    <section className="py-[100px]" id='team'>
       <div className="container">
         <h4 className="text-[#007bbd] text-[14px]  border-b-4 border-[#007bbd] pb-[10px] w-[200px] flex items-center gap-3">
           <span className="w-[8px] h-[8px] flex items-center text-[30px]">
@@ -60,7 +60,7 @@ const DoctorsSection =()=> {
               <img
                 src={doctor.image}
                 alt={doctor.name}
-                className="w-full h-[395px] object-cover rounded-[16px] border p-2"
+                className="w-full h-[395px] object-contain rounded-[16px] border p-2"
               />
               <div className="mt-4 w-full">
                 <div>

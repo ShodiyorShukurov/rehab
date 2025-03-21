@@ -27,7 +27,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="pt-[60px] md:pt-[120px]">
+    <section className="pt-[60px] md:pt-[120px]" id="about">
       <div className="container">
         <div className="grid grid-cols-1 2xl:grid-cols-2 gap-4 2xl:gap-5">
           <h4 className="flex 2xl:hidden items-center  text-[#007bbd] text-[14px]  border-b-4 border-[#007bbd] pb-[10px] w-[200px] gap-3">
