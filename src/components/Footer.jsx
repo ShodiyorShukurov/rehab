@@ -14314,17 +14314,6 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row gap-6 md:pr-6">
             <div className="flex flex-col gap-1">
               <h4 className="font-semibold text-[16px] leading-[22px]">
-                {data.footer.email_address}
-              </h4>
-              <a
-                href="malito:enima@mail.com"
-                className="text-[14px] leading-[22px]"
-              >
-                enima@mail.com
-              </a>
-            </div>
-            <div className="flex flex-col gap-1">
-              <h4 className="font-semibold text-[16px] leading-[22px]">
                 {data.footer.phone_number}
               </h4>
               <a href="tel:+998942021984" className="text-[14px] leading-[22px]">
@@ -14366,39 +14355,8 @@ const Footer = () => {
               <a href="#team" className="text-[16px] leading-[26px]">
                 {data.footer.link4}
               </a>
-              <a href="#" className="text-[16px] leading-[26px]">
+              <a href="tel:+998942021984" className="text-[16px] leading-[26px]">
                 {data.footer.link5}
-              </a>
-            </li>
-            <li className="flex flex-col gap-3">
-              <h4 className="font-semibold text-[16px] leading-[22px]">
-                {data.footer.subtitle2}
-              </h4>
-              <a href="#" className="text-[16px] leading-[26px]">
-                {data.footer.link6}
-              </a>
-              <a href="#" className="text-[16px] leading-[26px]">
-                {data.footer.link7}
-              </a>
-              <a href="#" className="text-[16px] leading-[26px]">
-                {data.footer.link8}
-              </a>
-            </li>
-            <li className="flex flex-col gap-3">
-              <h4 className="font-semibold text-[16px] leading-[22px]">
-                {data.footer.subtitle3}
-              </h4>
-              <a href="#" className="text-[16px] leading-[26px]">
-                Twitter
-              </a>
-              <a href="#" className="text-[16px] leading-[26px]">
-                Instagram
-              </a>
-              <a href="#" className="text-[16px] leading-[26px]">
-                Linkedin
-              </a>
-              <a href="#" className="text-[16px] leading-[26px]">
-                Facebook
               </a>
             </li>
           </ul>
