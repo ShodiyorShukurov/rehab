@@ -16,17 +16,17 @@ const services = [
   {
     title: data.services.card2_title,
     description: data.services.card2_text,
-    image: services2,
+    image: services3,
   },
   {
     title: data.services.card3_title,
     description: data.services.card3_text,
-    image: services3,
+    image: services4,
   },
   {
     title: data.services.card4_title,
     description: data.services.card4_text,
-    image: services4,
+    image: services2,
   },
 ];
 
