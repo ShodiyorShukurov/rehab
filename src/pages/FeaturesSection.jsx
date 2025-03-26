@@ -30,7 +30,7 @@ const FeaturesSection = () => {
     <section className="pt-[60px] md:pt-[120px]" id="about">
       <div className="container">
         <div className="grid grid-cols-1 2xl:grid-cols-2 gap-4 2xl:gap-5">
-          <h4 className="flex 2xl:hidden items-center  text-[#007bbd] text-[14px]  border-b-4 border-[#007bbd] pb-[10px] w-[200px] gap-3">
+          <h4 className="flex 2xl:hidden items-center  text-[#71AF42] text-[14px]  border-b-4 border-[#71AF42] pb-[10px] w-[200px] gap-3">
             <span className="w-[8px] h-[8px] flex items-center text-[30px]">
               •
             </span>
@@ -41,7 +41,7 @@ const FeaturesSection = () => {
           </h2>
 
           <div className="flex flex-col">
-            <h4 className="hidden 2xl:flex items-center  text-[#007bbd] text-[14px]  border-b-4 border-[#007bbd] pb-[10px] w-[200px] gap-3">
+            <h4 className="hidden 2xl:flex items-center  text-[#71AF42] text-[14px]  border-b-4 border-[#71AF42] pb-[10px] w-[200px] gap-3">
               <span className="w-[8px] h-[8px] flex items-center text-[30px]">
                 •
               </span>
@@ -52,9 +52,6 @@ const FeaturesSection = () => {
               {data.features.text1}
             </p>
 
-            <button className="mt-6 bg-[#007bbd] text-white px-6 py-3 rounded-full  hover:bg-blue-600 transition w-fit">
-              {data.features.button_text}
-            </button>
           </div>
         </div>
 
@@ -68,7 +65,7 @@ const FeaturesSection = () => {
               key={index}
               className="p-6 border border-[#CFCFCF] rounded-[20px]"
             >
-              <div className="bg-[#007bbd] w-[52px] h-[52px] flex items-center justify-center rounded-[16px] mb-4">
+              <div className="bg-[#71AF42] w-[52px] h-[52px] flex items-center justify-center rounded-[16px] mb-4">
                 {feature.icon}
               </div>
               <h3 className="font-semibold text-[18px] md:text-[20px] leading-[25px] md:leading-[28px]">

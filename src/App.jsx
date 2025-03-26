@@ -17,9 +17,9 @@ const App = () => {
       <main>
         <HeroSection />
         <VideoModal />
+        <ServicesSection />
         <FeaturesSection />
         <Features />
-        <ServicesSection />
         <DoctorsSection />
         <Testimonials />
         <BookingBanner />

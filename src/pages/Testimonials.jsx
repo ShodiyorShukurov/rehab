@@ -1,4 +1,4 @@
-import data from '../mock/data.json'
+import data from '../mock/data.json';
 
 const Testimonials = () => {
   const testimonials = [
@@ -49,10 +49,10 @@ const Testimonials = () => {
     >
       <div className="container">
         <div className="text-center mb-8">
-          <h2 className="text-[28px] md:text-[32px] 2xl:text-[36px] leading-[39px] md:leading-[45px] 2xl:leading-[50px] font-semibold">{data.testimonial.title}</h2>
-          <p className="text-gray-600">
-          {data.testimonial.text}
-          </p>
+          <h2 className="text-[28px] md:text-[32px] 2xl:text-[36px] leading-[39px] md:leading-[45px] 2xl:leading-[50px] font-semibold">
+            {data.testimonial.title}
+          </h2>
+          <p className="text-gray-600">{data.testimonial.text}</p>
         </div>
         <div className="grid md:grid-cols-2 2xl:grid-cols-3 gap-6">
           {testimonials.map((t, index) => (
@@ -68,18 +68,18 @@ const Testimonials = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 256 256"
                     focusable="false"
-                    color="var(#007bbd, rgb(0, 123, 189))"
+                    color="var(#71AF42, rgb(0, 123, 189))"
                     style={{
                       userSelect: 'none',
                       width: '28px',
                       height: '28px',
                       display: 'inline-block',
-                      fill: '#007bbd',
-                      color: 'var(#007bbd, rgb(0, 123, 189))',
+                      fill: '#71AF42',
+                      color: 'var(#71AF42, rgb(0, 123, 189))',
                       flexShrink: 0,
                     }}
                   >
-                    <g color="var(#007bbd, rgb(0, 123, 189))" weight="fill">
+                    <g color="var(#71AF42, rgb(0, 123, 189))" weight="fill">
                       <path d="M116,72v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8H40a16,16,0,0,1-16-16V72A16,16,0,0,1,40,56h60A16,16,0,0,1,116,72ZM216,56H156a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16h60v8a32,32,0,0,1-32,32,8,8,0,0,0,0,16,48.05,48.05,0,0,0,48-48V72A16,16,0,0,0,216,56Z"></path>
                     </g>
                   </svg>

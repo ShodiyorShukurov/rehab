@@ -14,7 +14,7 @@ const FeaturesSection = () => {
           {/* Chap tomondagi matn */}
           <div className="flex flex-col w-full justify-between">
             <div>
-              <h4 className="text-[#007bbd] text-[14px]  border-b-4 border-[#007bbd] pb-[10px] w-[200px] flex items-center gap-3">
+              <h4 className="text-[#71AF42] text-[14px]  border-b-4 border-[#71AF42] pb-[10px] w-[200px] flex items-center gap-3">
                 <span className="w-[8px] h-[8px] flex items-center text-[30px]">
                   •
                 </span>{' '}
@@ -59,7 +59,7 @@ const FeaturesSection = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-[#007bbd] text-white p-6 rounded-[16px] h-[280px]">
+            <div className="bg-[#71AF42] text-white p-6 rounded-[16px] h-[280px]">
               <h3 className="text-[20px] md:text-[24px] font-semibold leading-[28px] md:leading-[34px]">
                 {data.features.card5_title}
               </h3>

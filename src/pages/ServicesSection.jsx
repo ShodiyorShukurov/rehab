@@ -34,11 +34,11 @@ const ServicesSection = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="pt-[120px]" id='service'>
+    <section className="pt-[120px]" id="service">
       <div className="container">
         <div className="grid grid-cols-1 2xl:grid-cols-3 md:gap-6">
           <div className="flex flex-col gap-4">
-            <div className="bg-[#007BBD] text-white p-6 rounded-[16px] h-[360px]">
+            <div className="bg-[#71AF42] text-white p-6 rounded-[16px] h-[360px]">
               <h4 className="text-[#fff] text-[14px]  border-b-4 border-[#fff] pb-[10px] w-[200px] flex items-center gap-3">
                 <span className="w-[8px] h-[8px] flex items-center text-[30px]">
                   •

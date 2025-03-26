@@ -1,11 +1,11 @@
 import React from 'react';
+import { PhoneCall, Send } from 'lucide-react';
 import data from '../mock/data.json';
 
 const HeroSection = () => {
   return (
     <section className="pt-[100px] md:pt-[140px]">
       <div className="container">
-
         <div className="flex flex-col gap-6">
           <p className="text-[#696969] text-center text-[14px] flex gap-2 items-center justify-center">
             <svg
@@ -118,33 +118,25 @@ const HeroSection = () => {
             {data.hero.title}
           </h1>
           <p className="text-[#696969] text-center w-full max-w-[800px] mx-auto">
-          {data.hero.text}
+            {data.hero.text}
           </p>
 
           {/* Tugmalar */}
-          <div className="flex justify-center space-x-4">
-            <a href='tel:+998942021984' className="bg-[#007bbd] text-white px-[24px] py-[12px] rounded-full flex items-center space-x-2 hover:bg-blue-600 group transition-all duration-300">
+          <div className="flex flex-col justify-center space-y-4">
+            <a
+              href="tel:+998942021984"
+              className="bg-[#71AF42] w-fit mx-auto text-white px-[24px] py-[12px] rounded-full flex items-center space-x-2 hover:bg-[#71AF42]-600 group transition-all duration-300"
+            >
               <span> {data.hero.button_text}</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="rgb(255, 255, 255)"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="transition-transform duration-300 group-hover:rotate-45"
-              >
-                <line x1="7" y1="17" x2="17" y2="7"></line>
-                <polyline points="7 7 17 7 17 17"></polyline>
-              </svg>
+              <PhoneCall size={20} />
             </a>
 
-            <button className="text-[#121418] hover:text-blue-500">
-            {data.hero.learn_more}
-            </button>
+            <a
+              href="https://t.me/+998942021984"
+              className="bg-[#71AF42] w-fit mx-auto text-white px-[24px] py-[12px] rounded-full flex items-center space-x-2 hover:bg-[#71AF42]-600 group transition-all duration-300"
+            >
+              <span>{data.hero.learn_more}</span> <Send size={20} />
+            </a>
           </div>
 
           <div className="flex justify-center items-center space-x-3">
@@ -166,9 +158,12 @@ const HeroSection = () => {
               />
             </div>
             <div>
-              <p className="text-[#121418] font-semibold"> {data.hero.customer}</p>
+              <p className="text-[#121418] font-semibold">
+                {' '}
+                {data.hero.customer}
+              </p>
               <div className="flex items-center gap-3">
-                <div className="flex items-center space-x-1 text-[#007bbd]">
+                <div className="flex items-center space-x-1 text-[#71AF42]">
                   {[...Array(5)].map((_, i) => (
                     <svg
                       key={i}
@@ -186,8 +181,6 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-
-    
       </div>
     </section>
   );
