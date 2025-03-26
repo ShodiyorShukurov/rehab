@@ -78,7 +78,7 @@ const ServicesSection = () => {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="flex md:items-center md:justify-between flex-col md:flex-row border-y p-6 cursor-pointer hover:bg-[#f7f7f7]"
+                  className="flex md:items-center md:gap-10 flex-col md:flex-row border-y p-6 cursor-pointer hover:bg-[#f7f7f7]"
                   data-aos="fade-up"
                   data-aos-duration="3000"
                 >
@@ -95,9 +95,6 @@ const ServicesSection = () => {
                       {service.description}
                     </p>
                   </div>
-                  <button className="w-[48px] h-[48px] bg-transparent hover:bg-[#121418] flex justify-center items-center rounded-full text-[#121418] hover:text-white transition-all duration-300">
-                    <ArrowUpRight className="w-6 h-6 stroke-current" />
-                  </button>
                 </div>
               ))}
             </div>

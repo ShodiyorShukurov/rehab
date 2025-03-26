@@ -133,9 +133,9 @@ const HeroSection = () => {
 
             <a
               href="https://t.me/+998942021984"
-              className="bg-[#71AF42] w-fit mx-auto text-white px-[24px] py-[12px] rounded-full flex items-center space-x-2 hover:bg-[#71AF42]-600 group transition-all duration-300"
+              className="bg-transparent border border-[#71AF42] w-fit mx-auto text-[#71AF42] px-[24px] py-[12px] rounded-full flex items-center space-x-2 hover:bg-[#71AF42]-600 group transition-all duration-300"
             >
-              <span>{data.hero.learn_more}</span> <Send size={20} />
+              <span>{data.hero.learn_more}</span> <Send size={20} color='#71AF42'/>
             </a>
           </div>
 
